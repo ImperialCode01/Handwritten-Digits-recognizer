@@ -1,10 +1,10 @@
-Handwritten Digit Recognition
+# Handwritten Digit Recognition
 
 A machine learning project that recognizes handwritten digits (0–9) using a Convolutional Neural Network (CNN).
 
 This project explores deep learning and computer vision by training a model to classify handwritten digit images and making it accessible through an interactive web application.
 
-Technologies Used
+## Technologies Used
 
 - Python
 - TensorFlow / Keras
@@ -13,7 +13,7 @@ Technologies Used
 - Gradio
 - Pillow (PIL)
 
-Dataset
+## Dataset
 
 The model was trained using the MNIST handwritten digit dataset, which contains:
 
@@ -22,7 +22,7 @@ The model was trained using the MNIST handwritten digit dataset, which contains:
 - 28 × 28 grayscale images
 - 10 digit classes (0–9)
 
-Model Architecture
+## Model Architecture
 
 The project uses a Convolutional Neural Network (CNN) designed for image classification.
 
@@ -37,13 +37,13 @@ The architecture consists of:
 7. Dropout layer with a rate of 0.3 to help reduce overfitting.
 8. Output layer with 10 neurons and Softmax activation.
 
-Training Configuration
+## Training Configuration
 
 - Optimizer: Adam
 - Loss function: Sparse Categorical Crossentropy
 - Early stopping to monitor validation loss and restore the best model weights.
 
-Model Performance
+## Model Performance
 
 The trained model achieved a test accuracy of 99.17% on the MNIST test dataset.
 
@@ -59,14 +59,14 @@ Live Demo
 
 [Try the Handwritten Digit Recognizer](https://capstone-project-88mw.onrender.com)
 
-Project Files
+## Project Files
 
 - "app.py" – Gradio application.
-- "requirement.txt" – Project dependencies.
+- "requirements.txt" – Project dependencies.
+- "cnn_model.h5" – Saved trained CNN model.
 - "CNN_2.ipynb" – Jupyter Notebook containing the model development and training workflow.
-- "CNN_model (1).h5" – Saved trained CNN model.
 
-Future Improvements
+## Future Improvements
 
 - Improve prediction consistency across different handwriting styles.
 - Explore model optimization and deployment improvements.
